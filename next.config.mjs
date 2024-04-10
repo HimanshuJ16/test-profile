@@ -4,7 +4,7 @@ const nextConfig = {
     domains: [
       'source.unsplash.com',
       'images.unsplash.com',
-      'www.canva.com',
+      'media.istockphoto.com',
       'himanshuj16.github.io',
     ],
   },

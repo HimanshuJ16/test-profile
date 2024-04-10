@@ -1,11 +1,10 @@
-'use client'
+"use client"
 import { Spotlight } from "@/components/ui/Spotlight";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { LampContainer } from "@/components/ui/lamp";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { products } from "@/constants";
 import { motion } from "framer-motion";
-import img1 from '../../../../public/assets/1.jpg';
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import React from "react";
@@ -46,7 +45,7 @@ export default function Home() {
               <Badge className="h-10 w-10 transform -rotate-12" />
             </Link>
           }
-          src= {img1}
+          src={`https://media.istockphoto.com/id/1987169394/photo/responsive-web-design-concept-chart-with-keywords-and-icons-white-office-desk.jpg?s=2048x2048&w=is&k=20&c=dalj-qYtGslPs54alMMOfHmm1XB11z2Wol3h2cSNFGM=`}
           showGradient={false}
         />
       </div>
