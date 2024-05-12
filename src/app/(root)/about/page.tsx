@@ -12,7 +12,7 @@ import { redirect } from 'next/navigation';
 const About = () => {
   const { isSignedIn, sessionId } = useAuth();
   if(!isSignedIn) {
-    redirect('/sign-in');
+    redirect('/sign-up');
   }
   return (
     <section>
