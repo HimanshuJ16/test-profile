@@ -9,7 +9,7 @@ import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 import { useAuth } from "@clerk/clerk-react";
 import { redirect } from 'next/navigation';
 
-const about = () => {
+const About = () => {
   const { isSignedIn, sessionId } = useAuth();
   if(!isSignedIn) {
     redirect('/sign-in');
@@ -157,4 +157,4 @@ const dummyContent = [
   },
 ];
 
-export default about
+export default About
