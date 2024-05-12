@@ -6,8 +6,14 @@ import { twMerge } from "tailwind-merge";
 import { ContainerScroll } from '@/components/ui/container-scroll-animation';
 import { testimonials } from '@/constants';
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
+import { useAuth } from "@clerk/clerk-react";
+import { redirect } from 'next/navigation';
 
 const about = () => {
+  const { isSignedIn, sessionId } = useAuth();
+  if(!isSignedIn) {
+    redirect('/sign-in');
+  }
   return (
     <section>
       <div className="flex flex-col overflow-hidden">
